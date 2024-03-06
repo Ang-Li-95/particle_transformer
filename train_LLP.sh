@@ -7,7 +7,7 @@ source env.sh
 echo "args: $@"
 
 # set the dataset dir via `DATADIR_LLP`
-DATADIR=${DATADIR_LLP}
+DATADIR=$3
 [[ -z $DATADIR ]] && DATADIR='./datasets/LLP'
 # set a comment via `COMMENT`
 suffix=${COMMENT}

@@ -1,4 +1,21 @@
+## Setup
+This is done in the login node of CLIP
+
+Set up environment only once:
+
+- Install Anaconda
+- load the up-to-date compile toochain: ml build-env/f2022; ml foss/2023a
+- Make new environment: conda create -n weaver python=3.12
+- Install pytorch (CPU platform): pip3 install torch torchvision torchaudio
+- Install weaver-core: pip3 install weaver-core
+- Install cmake: pip3 install cmake
+- Install onnx: pip3 install onnx (to have onnxruntime, python version needs to be lower than 3.10)
+- Install pyarrow: conda install -c conda-forge pyarrow
+- Install ParT: git clone git@github.com:Ang-Li-95/particle_transformer.git
+
 ## Workflow
+
+First load the environment: `conda activate weaver` and go to the work directory: `cd /path/to/particle_transformer`
 
 ### 1. Prepare the input data ntuple
 
